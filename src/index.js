@@ -24,12 +24,13 @@ const createImageNode = () => {
 };
 
 const nuevaImagen = createImageNode();
+
 const mountNode = document.getElementById("images");
 
-mountNode.append(
-  nuevaImagen,
-  createImageNode(),
-  createImageNode(),
-  createImageNode(),
-  createImageNode()
-);
+const addButton = document.querySelector("button");
+
+const addImage = () => {
+  const newImage = createImageNode();
+  mountNode.append(newImage);
+};
+addButton.addEventListener("click", addImage);
