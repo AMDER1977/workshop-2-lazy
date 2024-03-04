@@ -5,7 +5,7 @@
 //*1.- debo crear un imagen
 //*2.- agregar #imagen
 //*2.1.- Imagenes aleatorias
-// *3.- referencia de lo que habia hecho en HTML:
+// *3.- Eventos del Dom
 const maximun = 123;
 const minimun = 1;
 const random = () => {
