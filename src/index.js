@@ -13,8 +13,10 @@
 //             />
 //           </div>
 const createImageNode = () => {
+  const container = document.createElement("div");
+  container.className = "p-4";
   const imagen = document.createElement("img");
-  imagen.class = "mx-auto";
+  imagen.className = "mx-auto";
   imagen.width = "300";
   imagen.src = "https://randomfox.ca/images/22.jpg";
 
