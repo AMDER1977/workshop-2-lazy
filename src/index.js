@@ -4,25 +4,32 @@
  **/
 //*1.- debo crear un imagen
 //*2.- agregar #imagen
+//*2.1.- Imagenes aleatorias
 // *3.- referencia de lo que habia hecho en HTML:
-//<div class="p-4">
-//             <img class="mx-auto"
-//               width="300"
-//               src="https://randomfox.ca/images/18.jpg"
-//               alt=""
-//             />
-//           </div>
+const maximun = 123;
+const minimun = 1;
+const random = () => {
+  return Math.floor(Math.random() * (maximun - minimun)) + minimun;
+};
 const createImageNode = () => {
   const container = document.createElement("div");
   container.className = "p-4";
   const imagen = document.createElement("img");
   imagen.className = "mx-auto";
   imagen.width = "300";
-  imagen.src = "https://randomfox.ca/images/22.jpg";
+  imagen.src = `https://randomfox.ca/images/${random()}.jpg`;
+  container.appendChild(imagen);
 
-  return imagen;
+  return container;
 };
 
 const nuevaImagen = createImageNode();
 const mountNode = document.getElementById("images");
-mountNode.appendChild(nuevaImagen);
+
+mountNode.append(
+  nuevaImagen,
+  createImageNode(),
+  createImageNode(),
+  createImageNode(),
+  createImageNode()
+);
