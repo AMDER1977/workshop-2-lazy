@@ -2,18 +2,21 @@ const isIntersecting = (entry) => {
   return entry.isIntersecting;
 };
 
-const accion = (entry) => {
-  const nodo = entry.target;
+const loadImage = (entry) => {
+  const container = entry.target; // imagen o div? es el container
 
-  console.log("mostrando:");
+  const imagen = container.firstChild;
+  const url = imagen.dataset.src;
+  imagen.src = url;
+  //imagen.src = `https://randomfox.ca/images/${random()}.jpg`; //console.log(container.nodeName);
 
   //hay que hacer que se desregistre la imgen luego
 
-  observer.unobserve(nodo);
+  observer.unobserve(container);
 };
 
 const observer = new IntersectionObserver((entries) => {
-  entries.filter(isIntersecting).forEach(accion);
+  entries.filter(isIntersecting).forEach(loadImage);
 });
 
 export const registerImage = (imagen) => {
