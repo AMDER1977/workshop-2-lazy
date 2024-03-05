@@ -8,13 +8,7 @@
       name="description"
       content="Web site created using create-snowpack-app"
     />
-    <!--
-      Snowpack will replace %PUBLIC_URL% with the value you have for `baseUrl` in `snowpack.config.js`.
-      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
 
-      More about config options:
-      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
-    -->
     <link
       rel="stylesheet"
       type="text/css"
@@ -22,29 +16,11 @@
     />
     <title>Lazy Loading</title>
   </head>
-  <body>
-    <!--
-      This HTML file is a template.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-
-      Start modyfing from here.
-    -->
+  <body
+    class="bg-gradient-to-br from-blue-400 via-purple-300 to-pink-100 bg-cover"
+  >
     <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center">
-        <p
-          class="
-            text-base
-            leading-6
-            text-indigo-600
-            font-semibold
-            tracking-wide
-            uppercase
-          "
-        >
-          Workshop 2
-        </p>
         <h3
           class="
             mt-2
@@ -56,30 +32,28 @@
             sm:text-4xl sm:leading-10
           "
         >
-          Lazy Loading
+          "Explora y Disfruta con Lazy Loading: ¡Imágenes Sorprendentes a tu
+          Ritmo!"
         </h3>
-        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
-          Plugin elaborado en vanilla JavaScript para cargar imagenes extraidas
-          de una Api.
+        <p class="mt-3 max-w-2xl text-xl leading-7 text-gray-600 mx-auto">
+          "Sumérgete en la Encantadora Galería de Zorros Aleatorios: Descubre la
+          Experiencia Única de Lazy Loading para una Dosificación Perfecta de
+          Adorables Sorpresas Peludas."
         </p>
-        <p class="mt-4">✨✨</p>
-        <p class="mt-4">
-          Las imágenes agregadas no se descargarán hasta que sean visibles en la
-          pantalla
-        </p>
-        <p class="mt-4">✨✨</p>
+
+        <p class="mt-3">✨✨</p>
       </div>
     </div>
     <fieldset class="text-center">
       <p class="p-3">
-        <legend class="mx-auto text-sm text-gray-500">
+        <legend class="mx-auto text-base text-gray-600">
           Agrega una nueva imagen al final de la lista
         </legend>
       </p>
       <button type="submit" class="p-5 bg-blue-400 mt-5 mb-5 rounded">
         Agregar Imagen
       </button>
-      <p class="mt-4">
+      <p class="mt-3">
         <button
           type="reset"
           class="
@@ -96,7 +70,8 @@
         </button>
       </p>
     </fieldset>
-    <div class="mt-4" id="images"></div>
+    <div class="mt-4 grid grid-cols-4 gap-4" id="images"></div>
+
     <footer class="text-center mt-48 p-6 text-sm text-gray-500">
       <p>
         Powered by

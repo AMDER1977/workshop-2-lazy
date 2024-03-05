@@ -16,10 +16,11 @@ export const createImageNodes = () => {
   //     "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjMyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4=";
   //   image.dataset.src = `https://randomfox.ca/images/${random()}.jpg`;
   //   image.width = 320;
-  const image = h("img.mx-auto.rounded-md.bg-gray-300", {
+  const image = h("img.mx-auto.rounded-md.bg-gray-300.w-320.h-300", {
     //* hyperscript resume las  lineas anteriores
     width: "320",
     "data-src": `https://randomfox.ca/images/${random()}.jpg`,
+    alt: "Random-Fox",
   });
 
   wrapper.append(image);
