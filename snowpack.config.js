@@ -5,7 +5,8 @@ module.exports = {
     src: "/_dist_",
   },
   buildOptions: {
-    baseUrl: "",
+    out: "build", // Carpeta de salida (ajusta según tu preferencia)
+    formats: ["esm", "cjs", "umd", "iife"],
   },
   exclude: ["**/LICENSE"],
 };
