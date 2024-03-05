@@ -1,4 +1,5 @@
 {
+  "homepage": "AMDER1977.github.io/workshop-2-lazy",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
