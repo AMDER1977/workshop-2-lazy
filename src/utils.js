@@ -8,7 +8,7 @@ const random = () => Math.floor(Math.random() * (maximum - minimum)) + minimum;
 export const createImageNodes = () => {
   //   const wrapper = document.createElement("div");
   //   wrapper.className = "p-4";
-  const wrapper = h("div.p-4"); // hyperscript resume las dos lineas anteriores
+  const wrapper = h("div.p-4"); //* hyperscript resume las dos lineas anteriores
 
   //   const image = document.createElement("img");
   //   image.className = "mx-auto rounded-md bg-gray-300";
@@ -17,6 +17,7 @@ export const createImageNodes = () => {
   //   image.dataset.src = `https://randomfox.ca/images/${random()}.jpg`;
   //   image.width = 320;
   const image = h("img.mx-auto.rounded-md.bg-gray-300", {
+    //* hyperscript resume las  lineas anteriores
     width: "320",
     "data-src": `https://randomfox.ca/images/${random()}.jpg`,
   });
