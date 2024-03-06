@@ -15,6 +15,7 @@
     "tailwindcss": "^2.0.2"
   },
   "dependencies": {
-    "hyperscript": "^2.0.2"
+    "hyperscript": "^2.0.2",
+    "netlify": "^13.1.14"
   }
 }
