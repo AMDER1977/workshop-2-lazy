@@ -1,5 +1,5 @@
 {
-  "homepage": "AMDER1977.github.io/workshop-2-lazy",
+  "homepage": "https://workshop-2-lazy.vercel.app/",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",

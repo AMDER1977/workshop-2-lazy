@@ -5,6 +5,6 @@ module.exports = {
     src: "/_dist_",
   },
   buildOptions: {
-    baseUrl: "AMDER1977.github.io/workshop-2-lazy",
+    baseUrl: "https://workshop-2-lazy.vercel.app/",
   },
 };
