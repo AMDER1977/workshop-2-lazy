@@ -2,7 +2,7 @@
 module.exports = {
   mount: {
     public: "/",
-    src: "/build",
+    src: "/_dist_",
   },
   buildOptions: {
     baseUrl: "",
