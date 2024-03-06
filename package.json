@@ -1,5 +1,4 @@
 {
-  "homepage": "https://workshop-2-lazy.vercel.app/",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
