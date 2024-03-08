@@ -4,6 +4,6 @@ module.exports = {
     src: "/_dist_",
   },
   buildOptions: {
-    baseUrl: "https://",
+    baseUrl: "https://github.com/AMDER1977/workshop-2-lazy",
   },
 };
